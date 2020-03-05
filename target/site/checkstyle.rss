@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 1,
-             Errors: 11,
+      <title>File: 4,
+             Errors: 72,
              Warnings: 0,
              Infos: 0
       </title>
@@ -46,6 +46,20 @@ under the License.
           <tbody>
                           <tr>
                 <td>
+                  <a href="http://maven.apache.org/checkstyle.html#uvsq.Exo_gl3.Employer.java">uvsq/Exo_gl3/Employer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="http://maven.apache.org/checkstyle.html#uvsq.Exo_gl3.App.java">uvsq/Exo_gl3/App.java</a>
                 </td>
                 <td>
@@ -56,6 +70,34 @@ under the License.
                 </td>
                 <td>
                   11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#uvsq.Exo_gl3.Vendeur.java">uvsq/Exo_gl3/Vendeur.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#uvsq.Exo_gl3.Manager.java">uvsq/Exo_gl3/Manager.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  27
                 </td>
               </tr>
                       </tbody>
