@@ -1,17 +1,19 @@
 package uvsq.Exo_gl3;
 
-public abstract class Employer{
 
-    private int salaire;
-    private int anciennete;
 
-    public Employer(int anciennete){
-        this.anciennete=anciennete;
-        this.salaire = 1500;
-    }
+public class Employer extends Salary {
 
-    public int calculsalaire(){
-        return salaire+anciennete*20;
-    }
+	final private int salaire=1500;
+	private int anciennete;
+	
+	public Employer(int anciennete) {
+		this.anciennete=anciennete;
+	}
 
+	@Override
+	public double salaire() {
+		return salaire+(2020-this.anciennete)*20;
+	}
+	
 }

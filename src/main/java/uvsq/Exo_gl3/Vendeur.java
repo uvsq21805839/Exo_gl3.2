@@ -1,15 +1,18 @@
 package uvsq.Exo_gl3;
-public class Vendeur extends Employer {
-    private int commission;
+/* Calcule de salaire des vendeurs*/
 
-    public Vendeur(int commission, int anciennete){
-        super(anciennete);
-        this.commission=commission;
-    }
 
-    @Override
-    public int calculsalaire(){
-        return super.calculsalaire()+commission;
-    }
+public class Vendeur extends Salary {
+
+	final private int salaireBase=2000;
+	private int commision;
+	
+	public Vendeur(int commision) {
+		this.commision=commision;
+	}
+	@Override
+	public double salaire() {
+		return salaireBase+commision;
+	}
 
 }
