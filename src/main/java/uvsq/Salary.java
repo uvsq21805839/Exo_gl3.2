@@ -4,5 +4,5 @@ public abstract class Salary {
 
 
 
-  public abstract double salaire();
+  public abstract double calculSalaire();
 }

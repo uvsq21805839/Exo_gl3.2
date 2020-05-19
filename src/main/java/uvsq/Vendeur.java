@@ -6,18 +6,25 @@ package uvsq;
 /* Calcule de salaire des vendeurs*/
 
 
-public class Vendeur extends Salary {
+public class Vendeur extends Employer{
+  private double commision;
 
-  private final int salaireBase = 2000;
-  private int commision;
 
-  public Vendeur(int commision) {
+  public Vendeur(double salaireAnciennete,int nbrAnne, double salaireCommision){
+    super(salaireAnciennete,nbrAnne);
+    this.commision=salaireCommision;
+
+  }
+
+  public double getCommision() {
+    return commision;
+  }
+
+  public void setCommision(double commision) {
     this.commision = commision;
   }
-  
-  @Override
-  public double salaire() {
-    return salaireBase + commision;
-  }
 
+  public double calculSalaire(){
+    return 1500 + getSalaireAnciennete()*getNbranne()+commision;
+  }
 }

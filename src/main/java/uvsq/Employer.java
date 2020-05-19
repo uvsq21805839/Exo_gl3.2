@@ -1,19 +1,24 @@
 package uvsq;
 
 
-
-public class Employer extends Salary {
-
-  private final int salaire = 1500;
-  private int anciennete;
-
-  public Employer(int anciennete) {
-    this.anciennete = anciennete;
+public abstract class Employer extends Salary{
+  private double salaireAnciennete = 20;
+  private int nbrAnne;
+  public Employer(double salaireAnciennete, int nbrAnne){
+    this.salaireAnciennete=salaireAnciennete;
+    this.nbrAnne=nbrAnne;
   }
+  public int getNbranne(){return nbrAnne; }
+  public double getSalaireAnciennete(){return salaireAnciennete; }
 
-  @Override
-  public double salaire() {
-    return salaire + (2020 - this.anciennete) * 20;
+  public int getNbrAnne() {
+    return nbrAnne;
   }
-
+  public void setNbrAnne(int nbrAnne) {
+    this.nbrAnne = nbrAnne;
+  }
+  public void setSalaireAnciennete(double salaireAnciennete) {
+    this.salaireAnciennete = salaireAnciennete;
+  }
+  public abstract double calculSalaire();
 }
